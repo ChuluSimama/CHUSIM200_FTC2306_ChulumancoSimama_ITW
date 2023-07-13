@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="css/stylesheet.css">
   </head>
   <body>
-   <header><aside><section><img src="images/9BA1C7F5-4330-4E69-BA2E-7AB24353AFD7 2.jpg" alt="Avatar" style="height:300px;width:300px;">
+   <header><section>
+    <div class="Hero">
+    <picture>
+        <source srcset="images/Tablet image.jpg" media="max-width:700px">
+        <source srcset="images/Phone image.jpg" media="max-width:425px">
+        <img src="images/Laptop image.jpg" alt="Avatar" style="width: 300px; height: 300px;">
+    </picture>
     <h1>Chulumanco Simama</h1>
    <p>An introductory personal statement.</p></header>
+</div>
   <nav id="Menu"> 
-    <h2>Menu</h2>
+    <aside>
+        <h2>Menu</h2>
   <ul>
     <li><a href="#Education">Education</a></li>
     <li><a href="#Experience">Experience</a></li>
@@ -63,6 +71,10 @@
         <option value="SouthAfrica">South Africa</option>
         <option value="Other">Other</option>
     </select></p>
+    <p>Sex:
+        <input type="radio" name="sex" value="male">Male 
+        <input type="radio" name="sex" value="female">Female
+      </p>
     <p><label for="msg">About: </label>
         <textarea name="user_message" id="msg"></textarea></p>
 <p><input type="submit" value="FormSubmit"></p>
